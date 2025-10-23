@@ -1,5 +1,21 @@
 ## 一个现代的纯客户端渲染的 react ts 脚手架
 
+### 技术选型
+- **基础框架:** react + react-router v7 + typescript + vite
+- **包管理器:** pnpm
+- **代码 lint:** biome
+- **git 规范:** commitlint + lefthook
+- **ui 库:** shadcn ui + tailwindcss v4
+- **请求库:** axios + react-query
+- **时间库:** dayjs
+- **国际化:** i18next
+
+### 约定式路由
+- layout.tsx
+- index.tsx
+- [id].tsx
+- xxx.tsx
+
 ### 使用方法
 复制整个项目到文件夹中
 ``` shell
@@ -31,7 +47,13 @@ pnpm create vite react-csr-starter --template react-ts
 #### 6. 安装 axios 和 react-query，并封装
 参考 https://tanstack.com/query/v5/docs/framework/react/installation
 
-#### 6. 安装一些 utils 库
+#### 7. 实现 design token
+参考 https://vanilla-extract.style/documentation/getting-started
+``` shell
+pnpm add -D @vanilla-extract/css @vanilla-extract/vite-plugin
+```
+
+#### 8. 安装一些 utils 库
 ``` shell
 pnpm add date-fns dayjs ramda react-use zustand react-hook-form react-helmet-async numeral
 ```
